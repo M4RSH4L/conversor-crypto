@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizador de criptomonedas</title>
+    <link rel="stylesheet" href="estilos.css" >
+    <script src="appCripto.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    
+</head>
+<body onload="opcionesCriptomoneda()">
+
+
+    <div class="contenedor">
+        <div class= "row" >
+            <div class= "column">
+              
+             
+            </div> 
+            <div div class= "column">
+               
+                <form class="form">
+                     <h1 clas="head">swap to crypto!</h1>
+                    <div id="msj-error"></div>
+                    <label> Escoga su moneda</label>
+                    <select onChange="cotizarMoneda()"
+                     id="moneda">
+
+                    <option value="">- seleccionar</option>
+                    <option value="ARS">Peso Argentino</option>
+                    <option value="USD">Dolar de Estados Unidos</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">Libra Esterlina</option>
+                    <option value="MXN">Peso Mexicano</option>
+                    
+                    
+                    
+                    </select>
+                  <Label>seleccione su criptomoneda</Label>    
+                 <select 
+                 onChange="cotizarMoneda" 
+                 id="criptomoneda"
+                 >
+                
+                </select>
+                <Button
+                type="button"
+                class="boton"
+                onclick="cotizarMoneda()"
+                >Calcular</Button>              
+                </form>
+                <div class="resultado" id="divResultado"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
