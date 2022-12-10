@@ -15,7 +15,6 @@ h1{
 	 0 0 40px #1d1d1da8, 0 0 55px #6900fe, 0px 0px 70px #00738000;
 }
    
-    
 
 .error {
     background-color: blueviolet;
@@ -32,7 +31,11 @@ h1{
     display: inline-flex;
     margin: 7%;
     
-}                        
+}               
+@media screen and ( max-width:700px){
+   .resultado{ 
+       display:inline-block;
+     }}         
 .precio{
     margin:2%;
 }                                                                       
@@ -96,7 +99,6 @@ p.precio {
 
  .head{
      font-family: 'Bebas Neue', cursive;
-     color: #FFF;
      text-align:left;
      font-weight: 700;
      font-size: 50px;
@@ -112,6 +114,12 @@ p.precio {
      background-color: #66a2fe;
      display: block;
  }
+
+ @media screen and ( max-width:700px){
+ head{ 
+    font-size:4rem;
+  }}
+
 
  label {
      font-family: 'Bebas Neue', cursive;
